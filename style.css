@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    font-size: 90%;
+}
+
+body{
+    height: 100vh;
+    max-width: 1440px;
+    margin: auto;
+    
+}
+
+:root {
+--Red: hsl(0, 78%, 62%);
+--Cyan: hsl(180, 62%, 55%);
+--Orange: hsl(34, 97%, 64%);
+--Blue: hsl(212, 86%, 64%);
+--Very-Dark-Blue: hsl(234, 12%, 34%);
+--Grayish-Blue: hsl(229, 6%, 66%);
+--Very-Light-Gray: hsl(0, 0%, 98%);
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    background-color: var(--Very-Light-Gray);
+    
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 1rem;
+}
+
+
+.container .heading h1 {
+    text-align: center;
+    font-weight: 400;
+    font-size: 2.5rem;
+    color: var(--Grayish-Blue);
+}
+
+.container .heading span {
+    font-weight: bold;
+    color: var(--Very-Dark-Blue);
+}
+
+.container .heading p {
+    text-align: center;
+    width: 50%;
+    margin: 1rem auto;
+    color: var(--Very-Dark-Blue);
+}
+
+.container .box-cards {
+   display: flex;
+   justify-content: center;
+   align-content: center;
+   align-items: center;
+   flex-wrap: wrap;
+   padding: 2rem;
+   gap: 1rem;
+   
+}
+
+.container .box-cards .card {
+    max-width: 370px;
+    height: 250px;
+    padding: 2rem;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 10px;
+    position:relative;
+   
+}
+
+.container .box-cards .card img {
+    position: absolute;
+    right: 40px;
+    bottom: 50px;
+}
+
+.container .box-cards .card h2 {
+    color: var(--Very-Dark-Blue);
+}
+
+.container .box-cards .card p {
+    color: var(--Very-Dark-Blue);
+
+}
+
+
+
+.container .box-cards .supervisor {
+    border-top: var(--Cyan) solid 5px;
+}
+
+.container .box-cards .teambuilder {
+    margin-bottom: 10px;
+    border-top: 5px  solid hsl(0, 78%, 62%);
+
+}
+
+
+.container .box-cards .calculator {
+    border-top: var(--Blue) 5px solid;
+}
+
+
+.container .box-cards .karma {
+    margin-top: 10px;
+    border-top: var(--Orange) 5px solid;
+}
+
+
+
+
+
+@media (max-width: 991px) {
+
+    html {
+        font-size: 70%;
+    }
+
+    body {
+        padding: 1rem;
+    }
+
+    .container {
+        padding: 2rem 1rem;
+    }
+
+    .container .heading h1 {
+        font-size: 2.3rem;
+    }
+
+    .container .heading p {
+        width: 100%;
+    }
+
+    .container .box-cards .card {
+        height: 200px;
+    }
+
+
+
+    .container .box-cards {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
