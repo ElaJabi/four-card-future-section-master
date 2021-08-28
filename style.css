@@ -84,8 +84,8 @@ body {
 
 .container .box-cards .card img {
     position: absolute;
-    right: 40px;
-    bottom: 50px;
+    right: 30px;
+    bottom: 30px;
 }
 
 .container .box-cards .card h2 {
@@ -149,8 +149,6 @@ body {
     .container .box-cards .card {
         height: 200px;
     }
-
-
 
     .container .box-cards {
         display: flex;
